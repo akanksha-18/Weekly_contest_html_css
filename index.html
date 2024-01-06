@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex; 
+      background-color: white;
+    }
+    #sidebar {
+      width: 250px;
+      height: 100vh;
+      background-color: #f4f4f4;
+      padding-right: 10px;
+    
+    }
+    #iframe-container {
+      flex: 1; 
+      height: 100vh;
+    }
+    iframe {
+      width: 100%;
+      border: 2px solid #ccc;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+<div id="sidebar">
+  <iframe src="imglist.html" frameborder="0" width="100%" height="100%"></iframe>
+</div>
+
+<div id="iframe-container">
+  <iframe src="Resume.html" name="content_frame" frameborder="1" width="100%" height="100%"></iframe>
+</div>
+
+</body>
+</html>
